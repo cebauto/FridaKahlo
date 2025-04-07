@@ -1,0 +1,72 @@
+@font-face{
+    font-family: Quicksand;
+    src: url(/Fonts/Quicksand_ESTE_SI/Quicksand-VariableFont_wght.ttf) format("truetype");
+    
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: Libre_Bodoni;
+    src: url(/Fonts/Libre_Bodoni/LibreBodoni.ttf) format("truetype");
+
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: Reem_Kufi_Fun;
+    src: url(/Fonts/Reem_Kufi_Fun/ReemKufiFun.ttf) format("truetype");
+
+    font-weight: normal;
+    font-size: normal;
+}
+
+body, html{
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Libre_Bodoni', sans-serif;
+    color: #1e1e1e;
+}
+
+h1{
+    text-align: center;
+    font-family: "Reem_Kufi_Fun", sans-serif;
+    font-size: 80px;
+}
+
+.container{
+    display: grid;
+
+    width: 1600px;
+    height: 1000px;
+    background-color: blueviolet;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.item1{
+    background-color: #f0f8ff;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.item2{
+    background-color: indigo;
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item3{
+    background-color: mediumpurple;
+    grid-column-start: 7;
+    grid-column-end: span 6;
+}

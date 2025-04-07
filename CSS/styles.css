@@ -1,0 +1,224 @@
+@font-face{
+    font-family: Quicksand;
+    src: url(/Fonts/Quicksand_ESTE_SI/Quicksand-VariableFont_wght.ttf) format("truetype");
+    
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: Libre_Bodoni;
+    src: url(/Fonts/Libre_Bodoni/LibreBodoni.ttf) format("truetype");
+
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: Reem_Kufi_Fun;
+    src: url(/Fonts/Reem_Kufi_Fun/ReemKufiFun.ttf) format("truetype");
+
+    font-weight: normal;
+    font-size: normal;
+}
+
+body, html{
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Libre_Bodoni', sans-serif;
+    color: #1e1e1e;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#gif-fondo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 695.5px;
+    object-fit: cover;
+}
+
+.oscurecer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.2%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.content h1{
+    font-family: 'Reem_Kufi_Fun', sans-serif;
+    font-size: 200px;
+    color: #d9d9d9;
+    width: 1400px;
+    padding: none;
+    border: none;
+    margin: auto;
+}
+
+.content h2{
+    font-family: 'Libre_Bodoni', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #d9d9d9;
+    padding: none;
+    border: none;
+    margin: auto;
+}
+
+.links{
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    
+    width: auto;
+    height: 50px;
+    padding: 1px;
+    color: #1e1e1e;
+}
+
+ul{
+    font-family: 'Reem_Kufi_Fun', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+li{
+    width: 300px;
+    align-content: center;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*Boton cuando pasa el cursor*/
+li:hover{
+    transition: color 0.3 ease-in;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D81159;
+}
+
+/*Grid cuerpo*/
+.container{
+    display: grid;
+
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.item1 img{
+    position: relative;
+    top: 20px;
+    left: 130px;
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.item2{
+    grid-column-start: 10;
+    grid-column-end: 12;
+
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+h3{
+    font-family: 'Reem_Kufi_Fun', sans-serif;
+    position: relative;
+    text-align: right;
+    font-size: 30px;
+}
+
+.item3{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.parrafos{
+    font-family: "Libre_Bodoni", sans-serif;
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+}
+
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.item4 h4{
+    font-family: 'Reem_Kufi_Fun', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+}
+
+.item4 footer{
+    text-align: center;
+}
+
+.item4 ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.item4 li{
+    font-family: Libre_Bodoni, sans-serif;
+    margin: 1px;
+    text-align: center;
+}
